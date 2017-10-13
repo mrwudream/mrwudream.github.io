@@ -2,10 +2,6 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="baidu-site-verification" content="L6Lm9d5Crl"/>
-  
-  
-  
   
   <title>喜 迎 四 海 客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -26,7 +22,7 @@
     <link rel="icon" href="/img/favicon.png">
   
   
-  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
   
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
@@ -43,6 +39,7 @@
     <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
   <script>
       var yiliaConfig = {
+          rootUrl: '/',
           fancybox: true,
           animate: true,
           isHome: true,
@@ -60,69 +57,19 @@
     <div class="overlay"></div>
 <div class="intrude-less">
     <header id="header" class="inner">
-        <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
         <a href="/" class="profilepic">
             
-            <img lazy-src="/img/avatar.png" class="js-avatar">
+            <img lazy-src="/img/head.jpg" class="js-avatar">
             
         </a>
+
         <hgroup>
-          <h1 class="header-author"><a href="/">Wu Jiankun</a></h1>
+          <h1 class="header-author"><a href="/" title="Hi Mate">Wu Jiankun</a></h1>
         </hgroup>
+
         
         <p class="header-subtitle">挑战人生无极限，攀登人生更高峰</p>
         
-        
-            <form>
-                <input type="text" class="st-default-search-input search" id="local-search-input" placeholder=" Search...">
-            </form>
-            <div id="local-search-result"></div>
-        
-        
-            <script type="text/javascript">
-                (function() {
-                    'use strict';
-                    function getMatchData(keyword, data) {
-                        var matchData = [];
-                        for(var i =0;i<data.length;i++){
-                            if(data[i].title.toLowerCase().indexOf(keyword)>=0) 
-                                matchData.push(data[i])
-                        }
-                        return matchData;
-                    }
-                    var $input = $('#local-search-input');
-                    var $resultContent = $('#local-search-result');
-                    $input.keyup(function(){
-                        $.ajax({
-                            url: '/search.json',
-                            dataType: "json",
-                            success: function( json ) {
-                                var str='<ul class=\"search-result-list\">';                
-                                var keyword = $input.val().trim().toLowerCase();
-                                $resultContent.innerHTML = "";
-                                if ($input.val().trim().length <= 0) {
-                                    $resultContent.empty();
-                                    $('#switch-area').show();
-                                    return;
-                                }
-                                var results = getMatchData(keyword, json);
-                                if(results.length === 0){
-                                    $resultContent.empty();
-                                    $('#switch-area').show();
-                                    return;
-                                } 
-                                for(var i =0; i<results.length; i++){
-                                    str += "<li><a href='"+ results[i].url +"' class='search-result-title'>"+ results[i].title +"</a></li>";
-                                }
-                                str += "</ul>";
-                                $resultContent.empty();
-                                $resultContent.append(str);
-                                $('#switch-area').hide();
-                            }
-                        });
-                    });
-                })();
-            </script>
         
         
             <div id="switch-btn" class="switch-btn">
@@ -148,6 +95,7 @@
                         </div>
                         
                     </div>
+                    
                 </div>
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
@@ -164,84 +112,89 @@
                 </div>
             </div>
         
+
         <div id="switch-area" class="switch-area">
             <div class="switch-wrap">
                 <section class="switch-part switch-part1">
                     <nav class="header-menu">
                         <ul>
                         
-                            <li><a  href="/archives/">所有文章</a></li>
+                            <li><a href="/Home">博客首页</a></li>
                         
-                            <li><a  href="/categories/开发工具/">玩转开发工具</a></li>
+                            <li><a href="/works">作品展示</a></li>
                         
-                            <li><a  href="/categories/digital">玩转数码</a></li>
+                            <li><a href="/about">留言打卡</a></li>
                         
-                            <li><a  href="/categories/cognition">认知提升</a></li>
-                        
-                            <li><a  href="/about/">关于我</a></li>
+                            <li><a href="/FrontEndGuide">前端导航</a></li>
                         
                         </ul>
                     </nav>
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fl github"  target="_blank" href="/xxxxx" title="github">github</a>
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
                             
-                                <a class="fl weibo"  target="_blank" href="/xxxxxxxx" title="weibo">weibo</a>
+                                <a class="fl github" target="_blank" href="https://github.com/luuman" title="github">github</a>
                             
-                                <a class="fl rss"  target="_blank" href="/atom.xml" title="rss">rss</a>
+                                <a class="fl zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                            
+                                <a class="fl weibo" target="_blank" href="#" title="weibo">weibo</a>
+                            
+                                <a class="fl google" target="_blank" href="#" title="google">google</a>
+                            
+                                <a class="fl twitter" target="_blank" href="#" title="twitter">twitter</a>
+                            
+                                <a class="fl linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
                             
                         </ul>
                     </nav>
                 </section>
                 
+                
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        
+                        <a href="/tags/Gitup/" style="font-size: 10px;">Gitup</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/个人博客/" style="font-size: 10px;">个人博客</a>
                     </div>
                 </section>
+                
                 
                 
                 <section class="switch-part switch-part3">
                     <div id="js-friends">
                     
-                      <a target="_blank"  class="main-nav-link switch-friends-link" href="http://blog.csdn.net/baidu_21483933">csdn</a>
-                    
-                      <a target="_blank"  class="main-nav-link switch-friends-link" href="https://segmentfault.com/blog/maocg_web">segmentfault</a>
-                    
-                      <a target="_blank"  class="main-nav-link switch-friends-link" href="http://www.jianshu.com/users/eb37ef89c746/latest_articles">简书</a>
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://luuman.github.io/">name</a>
                     
                     </div>
                 </section>
                 
+
                 
                 
                 <section class="switch-part switch-part4">
                 
-                    <div id="js-aboutme">爱动漫,爱游戏,爱编程,爱运动,爱的太多了!</div>
+                    <div id="js-aboutme">纯海迷、爱运动、爱交友、爱旅行、喜欢接触新鲜事物、迎接新的挑战，更爱游离于错综复杂的编码与逻辑中</div>
                 </section>
                 
             </div>
         </div>
-    </header>
+    </header>                
 </div>
-
     </div>
     <div class="mid-col">
       <nav id="mobile-nav">
       <div class="overlay">
           <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">Wu Jiankun</a></h1>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">Wu Jiankun</a></h1>
       </div>
     <div class="intrude-less">
         <header id="header" class="inner">
             <a href="/" class="profilepic">
                 
-                    <img lazy-src="/img/avatar.png" class="js-avatar">
+                    <img lazy-src="/img/head.jpg" class="js-avatar">
                 
             </a>
             <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页">Wu Jiankun</a></h1>
+              <h1 class="header-author"><a href="/" title="Me">Wu Jiankun</a></h1>
             </hgroup>
             
             <p class="header-subtitle">挑战人生无极限，攀登人生更高峰</p>
@@ -249,15 +202,13 @@
             <nav class="header-menu">
                 <ul>
                 
-                    <li><a href="/archives/">所有文章</a></li>
+                    <li><a href="/Home">博客首页</a></li>
                 
-                    <li><a href="/categories/开发工具/">玩转开发工具</a></li>
+                    <li><a href="/works">作品展示</a></li>
                 
-                    <li><a href="/categories/digital">玩转数码</a></li>
+                    <li><a href="/about">留言打卡</a></li>
                 
-                    <li><a href="/categories/cognition">认知提升</a></li>
-                
-                    <li><a href="/about/">关于我</a></li>
+                    <li><a href="/FrontEndGuide">前端导航</a></li>
                 
                 <div class="clearfix"></div>
                 </ul>
@@ -265,11 +216,19 @@
             <nav class="header-nav">
                 <div class="social">
                     
-                        <a class="github" target="_blank" href="/xxxxx" title="github">github</a>
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
                     
-                        <a class="weibo" target="_blank" href="/xxxxxxxx" title="weibo">weibo</a>
+                        <a class="github" target="_blank" href="https://github.com/luuman" title="github">github</a>
                     
-                        <a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+                        <a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                    
+                        <a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+                    
+                        <a class="google" target="_blank" href="#" title="google">google</a>
+                    
+                        <a class="twitter" target="_blank" href="#" title="twitter">twitter</a>
+                    
+                        <a class="linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
                     
                 </div>
             </nav>
@@ -278,151 +237,12 @@
 </nav>
       <div class="body-wrap">
   
-    <article id="post-mm" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a  href="/2017/10/13/mm/" class="article-date">
-      <time datetime="2017-10-13T10:44:59.301Z" itemprop="datePublished">2017-10-13</time>
-</a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>块引用<br>常用于引用文本<br>文本摘自《深入理解计算机系统》P27<br>　令人吃惊的是，在哪种字节顺序是合适的这个问题上，人们表现得非常情绪化。实际上术语“little endian”（小端）和“big endian”（大端）出自Jonathan Swift的《格利佛游记》一书，其中交战的两个派别无法就应该从哪一端打开一个半熟的鸡蛋达成一致。因此，争论沦为关于社会政治的争论。只要选择了一种规则并且始终如一的坚持，其实对于哪种字节排序的选择都是任意的。</p>
-<p>“端”（endian）的起源<br>以下是Jonathan Swift在1726年关于大小端之争历史的描述：<br>“……下面我要告诉你的是，Lilliput和Blefuscu这两大强国在过去36个月里一直在苦战。战争开始是由于以下的原因：我们大家都认为，吃鸡蛋前，原始的方法是打破鸡蛋较大的一端，可是当今的皇帝的祖父小时候吃鸡蛋，一次按古法打鸡蛋时碰巧将一个手指弄破了，因此他的父亲，当时的皇帝，就下了一道敕令，命令全体臣民吃鸡蛋时打破较小的一端，违令者重罚。”</p>
-<p>块引用有多级结构<br>数据结构</p>
-<p>树</p>
-<p>二叉树</p>
-<p>平衡二叉树</p>
-<p>满二叉树</p>
-<p>代码高亮<br>在三个反引号后面加上编程语言的名字，另起一行开始写代码，最后一行再加上三个反引号。</p>
-<p>public static void main(String[]args){} //Java<br>int main(int argc, char *argv[]) //C<br>echo “hello GitHub” #Bash<br>document.getElementById(“myH1”).innerHTML=”Welcome to my Homepage”; //javascipt<br>string &amp;operator+(const string&amp; A,const string&amp; B) //cpp<br>表格<br>表头1    表头2<br>表格单元    表格单元<br>表格单元    表格单元<br>表头1    表头2<br>表格单元    表格单元<br>表格单元    表格单元<br>对齐<br>表格可以指定对齐方式</p>
-<p>左对齐    居中    右对齐<br>col 3 is    some wordy text    $1600<br>col 2 is    centered    $12<br>zebra stripes    are neat    $1<br>混合其他语法<br>表格单元中的内容可以和其他大多数GFM语法配合使用，如：</p>
-<p>使用普通文本的删除线，斜体等效果<br>名字    描述<br>Help    Display the help window.<br>Close    Closes a window<br>表格中嵌入图片（链接）<br>其实前面介绍图片显示、图片链接的时候为了清晰就是放在在表格中显示的。</p>
-<p>图片    描述<br>baidu    百度<br>表情<br>Github的Markdown语法支持添加emoji表情，输入不同的符号码（两个冒号包围的字符）可以显示出不同的表情。</p>
-<p>比如:blush:，可以显示😊。</p>
-<p>具体每一个表情的符号码，可以查询GitHub的官方网页<a href="http://www.emoji-cheat-sheet.com。" target="_blank" rel="external">http://www.emoji-cheat-sheet.com。</a></p>
-<p>但是这个网页每次都打开奇慢。。所以我整理到了本repo中，大家可以直接在此查看emoji。</p>
-<p>diff语法<br>版本控制的系统中都少不了diff的功能，即展示一个文件内容的增加与删除。 GFM中可以显示的展示diff效果。使用绿色表示新增，红色表示删除。</p>
-<p>其语法与代码高亮类似，只是在三个反引号后面写diff， 并且其内容中，以 +开头表示新增，-开头表示删除。</p>
-<p>效果如下：</p>
-<ul>
-<li>鸟宿池边树，僧敲月下门</li>
-</ul>
-<ul>
-<li>鸟宿池边树，僧推月下门</li>
-</ul>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hh" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a  href="/2017/10/13/hh/" class="article-date">
-      <time datetime="2017-10-13T10:44:28.224Z" itemprop="datePublished">2017-10-13</time>
-</a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>块引用<br>常用于引用文本<br>文本摘自《深入理解计算机系统》P27<br>　令人吃惊的是，在哪种字节顺序是合适的这个问题上，人们表现得非常情绪化。实际上术语“little endian”（小端）和“big endian”（大端）出自Jonathan Swift的《格利佛游记》一书，其中交战的两个派别无法就应该从哪一端打开一个半熟的鸡蛋达成一致。因此，争论沦为关于社会政治的争论。只要选择了一种规则并且始终如一的坚持，其实对于哪种字节排序的选择都是任意的。</p>
-<p>“端”（endian）的起源<br>以下是Jonathan Swift在1726年关于大小端之争历史的描述：<br>“……下面我要告诉你的是，Lilliput和Blefuscu这两大强国在过去36个月里一直在苦战。战争开始是由于以下的原因：我们大家都认为，吃鸡蛋前，原始的方法是打破鸡蛋较大的一端，可是当今的皇帝的祖父小时候吃鸡蛋，一次按古法打鸡蛋时碰巧将一个手指弄破了，因此他的父亲，当时的皇帝，就下了一道敕令，命令全体臣民吃鸡蛋时打破较小的一端，违令者重罚。”</p>
-<p>块引用有多级结构<br>数据结构</p>
-<p>树</p>
-<p>二叉树</p>
-<p>平衡二叉树</p>
-<p>满二叉树</p>
-<p>代码高亮<br>在三个反引号后面加上编程语言的名字，另起一行开始写代码，最后一行再加上三个反引号。</p>
-<p>public static void main(String[]args){} //Java<br>int main(int argc, char *argv[]) //C<br>echo “hello GitHub” #Bash<br>document.getElementById(“myH1”).innerHTML=”Welcome to my Homepage”; //javascipt<br>string &amp;operator+(const string&amp; A,const string&amp; B) //cpp<br>表格<br>表头1    表头2<br>表格单元    表格单元<br>表格单元    表格单元<br>表头1    表头2<br>表格单元    表格单元<br>表格单元    表格单元<br>对齐<br>表格可以指定对齐方式</p>
-<p>左对齐    居中    右对齐<br>col 3 is    some wordy text    $1600<br>col 2 is    centered    $12<br>zebra stripes    are neat    $1<br>混合其他语法<br>表格单元中的内容可以和其他大多数GFM语法配合使用，如：</p>
-<p>使用普通文本的删除线，斜体等效果<br>名字    描述<br>Help    Display the help window.<br>Close    Closes a window<br>表格中嵌入图片（链接）<br>其实前面介绍图片显示、图片链接的时候为了清晰就是放在在表格中显示的。</p>
-<p>图片    描述<br>baidu    百度<br>表情<br>Github的Markdown语法支持添加emoji表情，输入不同的符号码（两个冒号包围的字符）可以显示出不同的表情。</p>
-<p>比如:blush:，可以显示😊。</p>
-<p>具体每一个表情的符号码，可以查询GitHub的官方网页<a href="http://www.emoji-cheat-sheet.com。" target="_blank" rel="external">http://www.emoji-cheat-sheet.com。</a></p>
-<p>但是这个网页每次都打开奇慢。。所以我整理到了本repo中，大家可以直接在此查看emoji。</p>
-<p>diff语法<br>版本控制的系统中都少不了diff的功能，即展示一个文件内容的增加与删除。 GFM中可以显示的展示diff效果。使用绿色表示新增，红色表示删除。</p>
-<p>其语法与代码高亮类似，只是在三个反引号后面写diff， 并且其内容中，以 +开头表示新增，-开头表示删除。</p>
-<p>效果如下：</p>
-<ul>
-<li>鸟宿池边树，僧敲月下门</li>
-</ul>
-<ul>
-<li>鸟宿池边树，僧推月下门</li>
-</ul>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-  
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a  href="/2017/10/12/hello-world/" class="article-date">
-      <time datetime="2017-10-12T10:23:35.555Z" itemprop="datePublished">2017-10-12</time>
+      <a href="/2017/10/13/hello-world/" class="article-date">
+      <time datetime="2017-10-12T16:08:30.000Z" itemprop="datePublished">2017-10-13</time>
 </a>
-
     </div>
   
   <div class="article-inner">
@@ -430,34 +250,23 @@
       <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/13/hello-world/">Hexo+Gitup免费搭建个人博客</a>
+    </h1>
+  
+
+      </header>
+      
+    
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>块引用<br>常用于引用文本<br>文本摘自《深入理解计算机系统》P27<br>　令人吃惊的是，在哪种字节顺序是合适的这个问题上，人们表现得非常情绪化。实际上术语“little endian”（小端）和“big endian”（大端）出自Jonathan Swift的《格利佛游记》一书，其中交战的两个派别无法就应该从哪一端打开一个半熟的鸡蛋达成一致。因此，争论沦为关于社会政治的争论。只要选择了一种规则并且始终如一的坚持，其实对于哪种字节排序的选择都是任意的。</p>
-<p>“端”（endian）的起源<br>以下是Jonathan Swift在1726年关于大小端之争历史的描述：<br>“……下面我要告诉你的是，Lilliput和Blefuscu这两大强国在过去36个月里一直在苦战。战争开始是由于以下的原因：我们大家都认为，吃鸡蛋前，原始的方法是打破鸡蛋较大的一端，可是当今的皇帝的祖父小时候吃鸡蛋，一次按古法打鸡蛋时碰巧将一个手指弄破了，因此他的父亲，当时的皇帝，就下了一道敕令，命令全体臣民吃鸡蛋时打破较小的一端，违令者重罚。”</p>
-<p>块引用有多级结构<br>数据结构</p>
-<p>树</p>
-<p>二叉树</p>
-<p>平衡二叉树</p>
-<p>满二叉树</p>
-<p>代码高亮<br>在三个反引号后面加上编程语言的名字，另起一行开始写代码，最后一行再加上三个反引号。</p>
-<p>public static void main(String[]args){} //Java<br>int main(int argc, char *argv[]) //C<br>echo “hello GitHub” #Bash<br>document.getElementById(“myH1”).innerHTML=”Welcome to my Homepage”; //javascipt<br>string &amp;operator+(const string&amp; A,const string&amp; B) //cpp<br>表格<br>表头1    表头2<br>表格单元    表格单元<br>表格单元    表格单元<br>表头1    表头2<br>表格单元    表格单元<br>表格单元    表格单元<br>对齐<br>表格可以指定对齐方式</p>
-<p>左对齐    居中    右对齐<br>col 3 is    some wordy text    $1600<br>col 2 is    centered    $12<br>zebra stripes    are neat    $1<br>混合其他语法<br>表格单元中的内容可以和其他大多数GFM语法配合使用，如：</p>
-<p>使用普通文本的删除线，斜体等效果<br>名字    描述<br>Help    Display the help window.<br>Close    Closes a window<br>表格中嵌入图片（链接）<br>其实前面介绍图片显示、图片链接的时候为了清晰就是放在在表格中显示的。</p>
-<p>图片    描述<br>baidu    百度<br>表情<br>Github的Markdown语法支持添加emoji表情，输入不同的符号码（两个冒号包围的字符）可以显示出不同的表情。</p>
-<p>比如:blush:，可以显示😊。</p>
-<p>具体每一个表情的符号码，可以查询GitHub的官方网页<a href="http://www.emoji-cheat-sheet.com。" target="_blank" rel="external">http://www.emoji-cheat-sheet.com。</a></p>
-<p>但是这个网页每次都打开奇慢。。所以我整理到了本repo中，大家可以直接在此查看emoji。</p>
-<p>diff语法<br>版本控制的系统中都少不了diff的功能，即展示一个文件内容的增加与删除。 GFM中可以显示的展示diff效果。使用绿色表示新增，红色表示删除。</p>
-<p>其语法与代码高亮类似，只是在三个反引号后面写diff， 并且其内容中，以 +开头表示新增，-开头表示删除。</p>
-<p>效果如下：</p>
-<ul>
-<li>鸟宿池边树，僧敲月下门</li>
-</ul>
-<ul>
-<li>鸟宿池边树，僧推月下门</li>
-</ul>
-
+              <p>文本摘自《深入理解计算机系统》P27<br>　令人吃惊的是，在哪种字节顺序是合适的这个问题上，人们表现得非常情绪化。实际上术语“little endian”（小端）和“big endian”（大端）出自Jonathan Swift的《格利佛游记》一书，其中交战的两个派别无法就应该从哪一端打开一个半熟的鸡蛋达成一致。因此，争论沦为关于社会政治的争论。只要选择了一种规则并且始终如一的坚持，其实对于哪种字节排序的选择都是任意的。</p>
+          
+      
       
     </div>
     
@@ -466,6 +275,14 @@
       
 
       
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Gitup/">Gitup</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/个人博客/">个人博客</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a  href="/2017/10/13/hello-world/#more">大航海 >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -482,11 +299,71 @@
 
 
 
+  
+    <article id="post-ss" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/10/13/ss/" class="article-date">
+      <time datetime="2017-10-12T16:08:30.000Z" itemprop="datePublished">2017-10-13</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/13/ss/">Hexo+Gitup免费搭建个人博客</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <p>文本摘自《深入理解计算机系统》P27<br>　令人吃惊的是，在哪种字节顺序是合适的这个问题上，人们表现得非常情绪化。实际上术语“little endian”（小端）和“big endian”（大端）出自Jonathan Swift的《格利佛游记》一书，其中交战的两个派别无法就应该从哪一端打开一个半熟的鸡蛋达成一致。因此，争论沦为关于社会政治的争论。只要选择了一种规则并且始终如一的坚持，其实对于哪种字节排序的选择都是任意的。</p>
+          
+      
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Gitup/">Gitup</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/个人博客/">个人博客</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a  href="/2017/10/13/ss/#more">大航海 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
 
 
   
   
-
 </div>
       <footer id="footer">
     <div class="outer">
@@ -495,14 +372,14 @@
                 &copy; 2017 Wu Jiankun
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank">Hexo</a><a href="https://github.com/maochunguang" target="_blank">Blog</a> by tommy
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" >极客到访数: 
+                        <span id="site-visit" >海贼到访数: 
                             <span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
@@ -523,12 +400,12 @@
 </footer>
 
     </div>
-    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
 <script src="/js/main.js"></script>
 
     <script>
         $(document).ready(function() {
-            var backgroundnum = 4;
+            var backgroundnum = 24;
             var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
             $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
             $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
@@ -536,30 +413,6 @@
     </script>
 
 
-<!-- Google Analytics -->
-<script type="text/javascript">
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'xxxxx', 'auto');
-ga('send', 'pageview');
-
-</script>
-<!-- End Google Analytics -->
-
-
-
-	<script>
-	var _hmt = _hmt || [];
-	(function() {
-	  var hm = document.createElement("script");
-	  hm.src = "//hm.baidu.com/hm.js?xxxxxx";
-	  var s = document.getElementsByTagName("script")[0]; 
-	  s.parentNode.insertBefore(hm, s);
-	})();
-	</script>
 
 
 
@@ -586,6 +439,7 @@ ga('send', 'pageview');
             var title = a.attr('title');
             if (title == undefined || title == "") return;
             a.data('title', title).removeAttr('title').hover(
+
             function() {
                 var offset = a.offset();
                 $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
