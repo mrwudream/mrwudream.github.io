@@ -3,20 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo+Gitup免费搭建个人博客 | 喜 迎 四 海 客</title>
+  <title>This 对象的理解 | 喜 迎 四 海 客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="文本摘自《深入理解计算机系统》P27　令人吃惊的是，在哪种字节顺序是合适的这个问题上，人们表现得非常情绪化。实际上术语“little endian”（小端）和“big endian”（大端）出自Jonathan Swift的《格利佛游记》一书，其中交战的两个派别无法就应该从哪一端打开一个半熟的鸡蛋达成一致。因此，争论沦为关于社会政治的争论。只要选择了一种规则并且始终如一的坚持，其实对于哪种字节排序">
-<meta name="keywords" content="Hexo,Gitup,个人博客">
+  <meta name="keywords" content="Javascript,前端">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo+Gitup免费搭建个人博客">
-<meta property="og:url" content="http://sihaike.github.io/2017/10/13/ss/index.html">
+<meta property="og:title" content="This 对象的理解">
+<meta property="og:url" content="http://sihaike.github.io/2017/10/13/this/index.html">
 <meta property="og:site_name" content="喜 迎 四 海 客">
-<meta property="og:description" content="文本摘自《深入理解计算机系统》P27　令人吃惊的是，在哪种字节顺序是合适的这个问题上，人们表现得非常情绪化。实际上术语“little endian”（小端）和“big endian”（大端）出自Jonathan Swift的《格利佛游记》一书，其中交战的两个派别无法就应该从哪一端打开一个半熟的鸡蛋达成一致。因此，争论沦为关于社会政治的争论。只要选择了一种规则并且始终如一的坚持，其实对于哪种字节排序">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-13T17:19:05.971Z">
+<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507989031410&di=4b1133c3895e4f058d1f2e806a68b062&imgtype=0&src=http%3A%2F%2Fdn-musicianguide.qbox.me%2Fwp-content%2Fuploads%2F2015%2F07%2Fthe-chemical-brothers-009-908x545-500x300.jpg">
+<meta property="og:updated_time" content="2017-10-14T11:04:58.326Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo+Gitup免费搭建个人博客">
-<meta name="twitter:description" content="文本摘自《深入理解计算机系统》P27　令人吃惊的是，在哪种字节顺序是合适的这个问题上，人们表现得非常情绪化。实际上术语“little endian”（小端）和“big endian”（大端）出自Jonathan Swift的《格利佛游记》一书，其中交战的两个派别无法就应该从哪一端打开一个半熟的鸡蛋达成一致。因此，争论沦为关于社会政治的争论。只要选择了一种规则并且始终如一的坚持，其实对于哪种字节排序">
+<meta name="twitter:title" content="This 对象的理解">
+<meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507989031410&di=4b1133c3895e4f058d1f2e806a68b062&imgtype=0&src=http%3A%2F%2Fdn-musicianguide.qbox.me%2Fwp-content%2Fuploads%2F2015%2F07%2Fthe-chemical-brothers-009-908x545-500x300.jpg">
   
     <link rel="alternative" href="/atom.xml" title="喜 迎 四 海 客" type="application/atom+xml">
   
@@ -124,7 +123,7 @@
                         
                             <li><a href="/about">留言打卡</a></li>
                         
-                            <li><a href="/FrontEndGuide">前端导航</a></li>
+                            <li><a href="/myhtml">前端导航</a></li>
                         
                         </ul>
                     </nav>
@@ -146,7 +145,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/Gitup/" style="font-size: 10px;">Gitup</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/个人博客/" style="font-size: 10px;">个人博客</a>
+                        <a href="/tags/Gitup/" style="font-size: 10px;">Gitup</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Javascript/" style="font-size: 10px;">Javascript</a> <a href="/tags/个人博客/" style="font-size: 10px;">个人博客</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a>
                     </div>
                 </section>
                 
@@ -201,7 +200,7 @@
                 
                     <li><a href="/about">留言打卡</a></li>
                 
-                    <li><a href="/FrontEndGuide">前端导航</a></li>
+                    <li><a href="/myhtml">前端导航</a></li>
                 
                 <div class="clearfix"></div>
                 </ul>
@@ -222,10 +221,10 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-ss" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-this" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/10/13/ss/" class="article-date">
+      <a href="/2017/10/13/this/" class="article-date">
       <time datetime="2017-10-12T16:08:30.000Z" itemprop="datePublished">2017-10-13</time>
 </a>
     </div>
@@ -239,7 +238,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hexo+Gitup免费搭建个人博客
+      This 对象的理解
     </h1>
   
 
@@ -250,7 +249,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Gitup/">Gitup</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/个人博客/">个人博客</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript/">Javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -260,32 +259,19 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>文本摘自《深入理解计算机系统》P27<br>　令人吃惊的是，在哪种字节顺序是合适的这个问题上，人们表现得非常情绪化。实际上术语“little endian”（小端）和“big endian”（大端）出自Jonathan Swift的《格利佛游记》一书，其中交战的两个派别无法就应该从哪一端打开一个半熟的鸡蛋达成一致。因此，争论沦为关于社会政治的争论。只要选择了一种规则并且始终如一的坚持，其实对于哪种字节排序的选择都是任意的。</p>
+        <p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507989031410&di=4b1133c3895e4f058d1f2e806a68b062&imgtype=0&src=http%3A%2F%2Fdn-musicianguide.qbox.me%2Fwp-content%2Fuploads%2F2015%2F07%2Fthe-chemical-brothers-009-908x545-500x300.jpg" alt="blog"></p>
 <a id="more"></a>
-<p>“端”（endian）的起源<br>以下是Jonathan Swift在1726年关于大小端之争历史的描述：<br>“……下面我要告诉你的是，Lilliput和Blefuscu这两大强国在过去36个月里一直在苦战。战争开始是由于以下的原因：我们大家都认为，吃鸡蛋前，原始的方法是打破鸡蛋较大的一端，可是当今的皇帝的祖父小时候吃鸡蛋，一次按古法打鸡蛋时碰巧将一个手指弄破了，因此他的父亲，当时的皇帝，就下了一道敕令，命令全体臣民吃鸡蛋时打破较小的一端，违令者重罚。”</p>
-<p>块引用有多级结构<br>数据结构</p>
-<p>树</p>
-<p>二叉树</p>
-<p>平衡二叉树</p>
-<p>满二叉树</p>
-<p>代码高亮<br>在三个反引号后面加上编程语言的名字，另起一行开始写代码，最后一行再加上三个反引号。</p>
-<p>public static void main(String[]args){} //Java<br>int main(int argc, char *argv[]) //C<br>echo “hello GitHub” #Bash<br>document.getElementById(“myH1”).innerHTML=”Welcome to my Homepage”; //javascipt<br>string &amp;operator+(const string&amp; A,const string&amp; B) //cpp<br>表格<br>表头1    表头2<br>表格单元    表格单元<br>表格单元    表格单元<br>表头1    表头2<br>表格单元    表格单元<br>表格单元    表格单元<br>对齐<br>表格可以指定对齐方式</p>
-<p>左对齐    居中    右对齐<br>col 3 is    some wordy text    $1600<br>col 2 is    centered    $12<br>zebra stripes    are neat    $1<br>混合其他语法<br>表格单元中的内容可以和其他大多数GFM语法配合使用，如：</p>
-<p>使用普通文本的删除线，斜体等效果<br>名字    描述<br>Help    Display the help window.<br>Close    Closes a window<br>表格中嵌入图片（链接）<br>其实前面介绍图片显示、图片链接的时候为了清晰就是放在在表格中显示的。</p>
-<p>图片    描述<br>baidu    百度<br>表情<br>Github的Markdown语法支持添加emoji表情，输入不同的符号码（两个冒号包围的字符）可以显示出不同的表情。</p>
-<p>比如:blush:，可以显示😊。</p>
-<p>具体每一个表情的符号码，可以查询GitHub的官方网页<a href="http://www.emoji-cheat-sheet.com。" target="_blank" rel="external">http://www.emoji-cheat-sheet.com。</a></p>
-<p>但是这个网页每次都打开奇慢。。所以我整理到了本repo中，大家可以直接在此查看emoji。</p>
-<p>diff语法<br>版本控制的系统中都少不了diff的功能，即展示一个文件内容的增加与删除。 GFM中可以显示的展示diff效果。使用绿色表示新增，红色表示删除。</p>
-<p>其语法与代码高亮类似，只是在三个反引号后面写diff， 并且其内容中，以 +开头表示新增，-开头表示删除。</p>
-<p>效果如下：</p>
-<ul>
-<li>鸟宿池边树，僧敲月下门</li>
-</ul>
-<ul>
-<li>鸟宿池边树，僧推月下门</li>
-</ul>
-
+<pre><code>this的指向:this表示当前对象，this的指向是根据调用的上下文来决定的，默认指向window对象，指向window对象时可以省略不写调用的上下文环境包括全局和局部:
+</code></pre><p><strong>一、全局环境</strong><br>        就是在<script></script>里面，这里的this始终指向的是window对象。<br><strong>二、局部环境</strong></p>
+<pre><code>1. 在全局作用域下直接调用函数，this指向window
+2. 对象函数调用，哪个对象调用就指向哪个对象
+3. 使用 new 实例化对象，在构造函数中的this指向实例化对象。
+4. 使用call或apply改变this的指向
+</code></pre><p><strong>另：</strong></p>
+<pre><code>1. 用于区分全局变量和局部变量，需要使用this
+2. 返回函数当前的对象
+3. 将当前的对象传递到下一个函数
+</code></pre>
       
       
         <div class="page-reward">
@@ -340,18 +326,18 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2017/10/13/ss/">Hexo+Gitup免费搭建个人博客</a></p>
+        <p><span>本文标题:</span><a href="/2017/10/13/this/">This 对象的理解</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Wu Jiankun 的个人博客">Wu Jiankun</a></p>
         <p><span>发布时间:</span>2017年10月13日 - 00时08分</p>
-        <p><span>最后更新:</span>2017年10月14日 - 01时19分</p>
+        <p><span>最后更新:</span>2017年10月14日 - 19时04分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/10/13/ss/" title="Hexo+Gitup免费搭建个人博客">http://sihaike.github.io/2017/10/13/ss/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://sihaike.github.io/2017/10/13/ss/　　作者: Wu Jiankun" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2017/10/13/this/" title="This 对象的理解">http://sihaike.github.io/2017/10/13/this/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://sihaike.github.io/2017/10/13/this/　　作者: Wu Jiankun" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> 转载请保留原文链接及作者。
         </p>
     </div>
 
@@ -359,7 +345,7 @@
 
 <nav id="article-nav">
   
-    <a href="/2017/10/13/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/10/13/createBlog/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
@@ -433,7 +419,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2017/10/13/hello-world/" title="上一篇: Hexo+Gitup免费搭建个人博客">
+            <a href="/2017/10/13/createBlog/" title="上一篇: Hexo+Gitup免费搭建个人博客">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -442,7 +428,7 @@
             <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
     </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/10/13/hello-world/">Hexo+Gitup免费搭建个人博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/13/ss/">Hexo+Gitup免费搭建个人博客</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/10/13/createBlog/">Hexo+Gitup免费搭建个人博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/13/this/">This 对象的理解</a></li></ul>
     <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
         $(".post-list").addClass("toc-article");
