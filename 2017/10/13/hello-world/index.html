@@ -340,15 +340,11 @@
 
 <nav id="article-nav">
   
-    <a href="/2017/10/13/ss/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          Hexo+Gitup免费搭建个人博客
-        
-      </div>
-    </a>
   
+    <a href="/2017/10/13/ss/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hexo+Gitup免费搭建个人博客</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
   
 </nav>
 
@@ -403,27 +399,36 @@
 
 
     
-        <section class="youyan" id="comments">
-  <div id="uyan_frame"></div>
-  <script src="http://v2.uyan.cc/code/uyan.js?uid=2146454"></script>
-</section>
-
+        <div id="gitments"></div>
+<script src="/js/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+      id: window.location.pathname,
+      owner: 'luuman',
+      repo: 'luuman.github.io',
+      oauth: {
+        client_id: '',
+        client_secret: '',
+      },
+    })
+    gitment.render('gitments')
+</script>
     
 
 
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2017/10/13/ss/" title="上一篇: Hexo+Gitup免费搭建个人博客">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2017/10/13/ss/" title="下一篇: Hexo+Gitup免费搭建个人博客">
+                <i class="fa fa-angle-right"></i>
+            </a>
         
     </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/10/13/ss/">Hexo+Gitup免费搭建个人博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/13/hello-world/">Hexo+Gitup免费搭建个人博客</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/10/13/hello-world/">Hexo+Gitup免费搭建个人博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/13/ss/">Hexo+Gitup免费搭建个人博客</a></li></ul>
     <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
         $(".post-list").addClass("toc-article");
