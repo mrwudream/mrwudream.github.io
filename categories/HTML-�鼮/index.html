@@ -3,19 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>This 对象的理解 | 喜 迎 四 海 客</title>
+  <title>Category: HTML �鼮 | 喜 迎 四 海 客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="Javascript,前端">
-<meta property="og:type" content="article">
-<meta property="og:title" content="This 对象的理解">
-<meta property="og:url" content="http://sihaike.github.io/2017/10/13/this/index.html">
+  <meta name="description" content="这是一个利用Hexo搭建的博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="喜 迎 四 海 客">
+<meta property="og:url" content="http://sihaike.github.io/categories/HTML-�鼮/index.html">
 <meta property="og:site_name" content="喜 迎 四 海 客">
+<meta property="og:description" content="这是一个利用Hexo搭建的博客">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507989031410&di=4b1133c3895e4f058d1f2e806a68b062&imgtype=0&src=http%3A%2F%2Fdn-musicianguide.qbox.me%2Fwp-content%2Fuploads%2F2015%2F07%2Fthe-chemical-brothers-009-908x545-500x300.jpg">
-<meta property="og:updated_time" content="2017-10-14T11:04:58.326Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="This 对象的理解">
-<meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507989031410&di=4b1133c3895e4f058d1f2e806a68b062&imgtype=0&src=http%3A%2F%2Fdn-musicianguide.qbox.me%2Fwp-content%2Fuploads%2F2015%2F07%2Fthe-chemical-brothers-009-908x545-500x300.jpg">
+<meta name="twitter:title" content="喜 迎 四 海 客">
+<meta name="twitter:description" content="这是一个利用Hexo搭建的博客">
   
     <link rel="alternative" href="/atom.xml" title="喜 迎 四 海 客" type="application/atom+xml">
   
@@ -41,10 +40,10 @@
           fancybox: true,
           animate: true,
           isHome: false,
-          isPost: true,
+          isPost: false,
           isArchive: false,
           isTag: false,
-          isCategory: false,
+          isCategory: true,
           open_in_new: false
       }
   </script>
@@ -221,258 +220,58 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-this" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap">
   
-    <div class="article-meta">
-      <a href="/2017/10/13/this/" class="article-date">
-      <time datetime="2017-10-12T16:08:30.000Z" itemprop="datePublished">2017-10-13</time>
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2016" class="archive-year">2016</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+          <div class="article-meta">
+              <a href="/2016/01/16/����/" class="archive-article-date">
+      <time datetime="2016-01-16T05:58:41.000Z" itemprop="datePublished">01-16</time>
 </a>
-    </div>
+        </div>
+         
   
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      This 对象的理解
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2016/01/16/����/">ǰ��֪ʶ��ϵ</a>
     </h1>
   
 
-      </header>
-      
-      <div class="article-info article-info-post">
-        
-
-        
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript/">Javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
-    </div>
-
-        <div class="clearfix"></div>
-      </div>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
+        <div class="article-info info-on-archive">
           
-        <p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507989031410&di=4b1133c3895e4f058d1f2e806a68b062&imgtype=0&src=http%3A%2F%2Fdn-musicianguide.qbox.me%2Fwp-content%2Fuploads%2F2015%2F07%2Fthe-chemical-brothers-009-908x545-500x300.jpg" alt="blog"></p>
-<a id="more"></a>
-<pre><code>this的指向:this表示当前对象，this的指向是根据调用的上下文来决定的，默认指向window对象，指向window对象时可以省略不写调用的上下文环境包括全局和局部:
-</code></pre><p><strong>一、全局环境</strong><br>        就是在<script></script>里面，这里的this始终指向的是window对象。<br><strong>二、局部环境</strong></p>
-<pre><code>1. 在全局作用域下直接调用函数，this指向window
-2. 对象函数调用，哪个对象调用就指向哪个对象
-3. 使用 new 实例化对象，在构造函数中的this指向实例化对象。
-4. 使用call或apply改变this的指向
-</code></pre><p><strong>另：</strong></p>
-<pre><code>1. 用于区分全局变量和局部变量，需要使用this
-2. 返回函数当前的对象
-3. 将当前的对象传递到下一个函数
-</code></pre>
-      
-      
-        <div class="page-reward">
-          <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang">赏</a></p>
-          <div class="hide_box"></div>
-          <div class="shang_box">
-            <a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
-            <div class="shang_tit">
-              <p>纯属娱乐</p>
-            </div>
-            <div class="shang_payimg">
-              <img src="/img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
-            </div>
-              <div class="pay_explain">扫码打赏，你说多少就多少！</div>
-            <div class="shang_payselect">
-              
-                <div class="pay_item checked" data-id="alipay">
-                  <span class="radiobox"></span>
-                  <span class="pay_logo"><img src="/img/alipay.png" alt="支付宝" /></span>
-                </div>
-              
-              
-                <div class="pay_item" data-id="wechat">
-                  <span class="radiobox"></span>
-                  <span class="pay_logo"><img src="/img/weixin.png" alt="微信" /></span>
-                </div>
-              
-            </div>
-            <div class="shang_info">
-              <p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
-            </div>
-          </div>
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/HTML-�鼮/">HTML �鼮</a><a class="article-category-link" href="/categories/HTML-�鼮/HTML-�鼮/">HTML �鼮</a>
+    </div>
+
+
+          
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML-��k/">HTML ��ǩ</a></li></ul>
+    </div>
+
         </div>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
-        <script type="text/javascript">
-          $(".pay_item").click(function(){
-            $(this).addClass('checked').siblings('.pay_item').removeClass('checked');
-            var dataid=$(this).attr('data-id');
-            $(".shang_payimg img").attr("src","/img/"+dataid+"img.jpg");
-            $("#shang_pay_txt").text(dataid=="alipay"?"支付宝":"微信");
-          });
-          function dashangToggle(){
-            
-            $(".hide_box").fadeToggle();
-            $(".shang_box").fadeToggle();
-          }
-        </script>
-      
-    </div>
-    
+        <div class="clearfix"></div>
+    </header>
   </div>
-  
-    
-    <div class="copyright">
-        <p><span>本文标题:</span><a href="/2017/10/13/this/">This 对象的理解</a></p>
-        <p><span>文章作者:</span><a href="/" title="访问 Wu Jiankun 的个人博客">Wu Jiankun</a></p>
-        <p><span>发布时间:</span>2017年10月13日 - 00时08分</p>
-        <p><span>最后更新:</span>2017年10月14日 - 19时04分</p>
-        <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/10/13/this/" title="This 对象的理解">http://sihaike.github.io/2017/10/13/this/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://sihaike.github.io/2017/10/13/this/　　作者: Wu Jiankun" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
-            <script src="/js/clipboard.min.js"></script>
-            <script> var clipboard = new Clipboard('.copy-path'); </script>
-        </p>
-        <p>
-            <span>许可协议:</span><i class="fa fa-creative-commons"></i> 转载请保留原文链接及作者。
-        </p>
-    </div>
-
-
-
-<nav id="article-nav">
-  
-    <a href="/2017/10/13/createBlog/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          Hexo+Gitup免费搭建个人博客
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2016/01/16/����/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">ǰ��֪ʶ��ϵ</div>
-      <strong class="article-nav-caption">></strong>
-    </a>
-  
-</nav>
-
-  
 </article>
-
-    <div id="toc" class="toc-article">
-    <strong class="toc-title">文章目录</strong>
-    
-</div>
-<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
-
-<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
-<script>
-    var valueHide = "隐藏目录";
-    var valueShow = "显示目录";
-
-    if ($(".left-col").is(":hidden")) {
-        $("#tocButton").attr("value", valueShow);
-    }
-    $("#tocButton").click(function() {
-        if ($("#toc").is(":hidden")) {
-            $("#tocButton").attr("value", valueHide);
-            $("#toc").slideDown(320);
-        }
-        else {
-            $("#tocButton").attr("value", valueShow);
-            $("#toc").slideUp(350);
-        }
-    })
-    if ($(".toc").length < 1) {
-        $("#toc, #tocButton").hide();
-    }
-</script>
-
-
-
-
-
-<div class="bdsharebuttonbox">
-	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
-	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
-	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
-	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
-	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
-</div>
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-
-
-
+  
+  
+    </div></section>
+  
 
     
-        <!-- ������City�氲װ���� -->
-<div id="lv-container" data-id="city" data-uid="MTAyMC8zMTM2Ny83OTMw" style="background-color: white;margin: 60px auto;width: 90%;padding: 10px 30px;box-sizing: border-box;border-radius: 13px;    box-shadow: 0 0 31px #69115a;">
-	<script type="text/javascript">
-   (function(d, s) {
-       var j, e = d.getElementsByTagName(s)[0];
 
-       if (typeof LivereTower === 'function') { return; }
-
-       j = d.createElement(s);
-       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-       j.async = true;
-
-       e.parentNode.insertBefore(j, e);
-   })(document, 'script');
-	</script>
-<noscript> Ϊ����ʹ�����������۹����뼤��JavaScript</noscript>
-</div>
-<!-- City�氲װ���������� -->
-    
-
-
-
-    <div class="scroll" id="post-nav-button">
-        
-            <a href="/2017/10/13/createBlog/" title="上一篇: Hexo+Gitup免费搭建个人博客">
-                <i class="fa fa-angle-left"></i>
-            </a>
-        
-        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
-        
-            <a href="/2016/01/16/����/" title="下一篇: ǰ��֪ʶ��ϵ">
-                <i class="fa fa-angle-right"></i>
-            </a>
-        
-    </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/10/13/createBlog/">Hexo+Gitup免费搭建个人博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/13/this/">This 对象的理解</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/16/����/">ǰ��֪ʶ��ϵ</a></li></ul>
-    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
-    <script>
-        $(".post-list").addClass("toc-article");
-        $(".post-list-item a").attr("target","_blank");
-        $("#post-nav-button > a:nth-child(2)").click(function() {
-            $(".fa-bars, .fa-times").toggle();
-            $(".post-list").toggle(300);
-            if ($(".toc").length > 0) {
-                $("#toc, #tocButton").toggle(200, function() {
-                    if ($(".switch-area").is(":visible")) {
-                        $("#tocButton").attr("value", valueHide);
-                        }
-                    })
-            }
-            else {
-            }
-        })
-    </script>
-
-
-
-    <script>
-        
-    </script>
 </div>
       <footer id="footer">
     <div class="outer">
@@ -537,6 +336,17 @@
         };
     })
 </script>
+
+    <button class="hide-labels">TAG 开关</button>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js">
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $(".article-info").toggle(200);
+            });
+        });
+    </script>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>

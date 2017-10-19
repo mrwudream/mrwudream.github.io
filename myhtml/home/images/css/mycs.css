@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.container1{
+    width: 100%;
+    height: 100%;
+    background-color: #2b2b2b;
+}
+.container0{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /*z-index: 20;*/
+}
+.screenbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.screenbox > .screen1,
+.screenbox > .screen2 {
+    width: 50%;
+    height: 100%;
+    background-color: #0DC291;
+    position: absolute;
+    top: 0;
+}
+
+.screenbox > .screen1 {
+    left: 0;
+}
+
+.screenbox > .screen2 {
+    right: 0;
+}
+
+.loading {
+    position: relative;
+    width: 600px;
+    overflow: hidden;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0DC291;
+}
+
+.loading .nodebox {
+    position: absolute;
+    width: 500px;
+    height: 20px;
+    right: 25px;
+    top: 38px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.loading .nodebox > ul {
+    width: 500px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.loading .nodebox > ul > li {
+    width: 20px;
+    height: 20px;
+    margin-right: 30px;
+    border-radius: 50%;
+    background-color: #883f85;
+    display: inline-block;
+    font-size: 0;
+}
+
+.loading .num {
+    width: 50px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: #905e9c;
+    font-family: fantasy;
+    margin: 123px auto 20px;
+}
+
+.loading .text {
+    width: 387px;
+    height: 73px;
+    line-height: 50px;
+    margin: 0 auto;
+}
+
+.loading .text > ul {
+    list-style: none;
+    display: inline-block;
+    font-size: 0;
+    margin-left: 40px;
+}
+
+.loading .text > ul > li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #daa520;
+    box-shadow: 1px 4px 6px #464437;
+    display: inline-block;
+}
+
+.loading .text > ul > li:nth-of-type(1) {
+    animation: movde1 0.5s infinite;
+}
+
+.loading .text > ul > li:nth-of-type(4) {
+    animation: movde2 0.5s infinite;
+}
+
+@keyframes movde1 {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-20px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes movde2 {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.loading .text > span {
+    font-size: 59px;
+    color: goldenrod;
+    font-family: fantasy;
+    letter-spacing: 7px;
+    text-shadow: 5px -2px 15px #464437;
+}
+
+.loading .circle1, .loading .circle2 {
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    /* 绘制半圆，采用只绘制左上角，左下角的方法，因此需要将宽度设置为高度的一半*/
+    border-radius: 100px 0 0 100px;
+    transform: rotate(0deg);
+    /*默认旋转中心是元素的中间，但是我们绘制的是半圆，因此旋转中心应该是 100%宽度，50%高度*/
+    transform-origin: 100% 50%;
+    background-color: #daa520;
+}
+
+.loading .circle2 {
+    animation: move1 .4s infinite;
+}
+
+.loading .circle1 {
+    animation: move2 .4s infinite;
+}
+
+/**动画*/
+@keyframes move1 {
+    0% {
+        transform: rotate(50deg);
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(50deg);
+    }
+}
+
+@keyframes move2 {
+    0% {
+        transform: rotate(-50deg);
+    }
+    50% {
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform: rotate(-50deg);
+    }
+}
+
+.loading #box {
+    position: absolute;
+    left: 0;
+}
+
+.container1>.mybloo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 18;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    height: 300px;
+    background-color: rgba(220, 221, 215, 0.05);
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 25px 2px rgba(84, 101, 94, 0.61);
+    /*opacity: 0.3;*/
+    transition: all 0.5s;
+}
+.container1>.mybloo:hover{
+    transition: all 0.5s;
+    opacity: 1;
+}
+.container1>.mybloo>.text0,
+.container1>.mybloo>.comein{
+    color: rgb(255, 162, 63);
+    font-family: cursive;
+    font-size: 52px;
+    text-shadow: -5px -1px 0px rgba(63, 103, 63, 0.69);
+    margin: 100px auto 70px;
+    font-weight: 900;
+}
+.container1>.mybloo>.comein{
+    font-size: 40px;
+    background-color: rgba(184, 134, 11, 0.66);
+    padding: 5px;
+    border-radius: 12px;
+    text-shadow: -2px -2px 1px rgba(0, 100, 0, 0.79);
+    box-shadow: 0px 3px 0px 1px rgba(117, 102, 22, 0.69);
+}
+
+
+
+

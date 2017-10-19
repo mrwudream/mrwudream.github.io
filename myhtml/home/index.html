@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <title>基于HTML5的3D翻转轮播幻灯片特效代码</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="stylesheet" href="images/css/style.css"/>
+    <link rel="stylesheet" href="images/css/slider-style.css"/>
+    <script type='text/javascript' src='images/js/modernizr.min.js?ver=2.6.1'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var CSSettings = {"pluginPath": "images"};
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='images/js/cute.slider.js?ver=2.0.0'></script>
+    <script type='text/javascript' src='images/js/cute.transitions.all.js?ver=2.0.0'></script>
+    <link rel="stylesheet" href="images/css/mycs.css">
+</head>
+<body>
+<div class="container1">
+    <div class="mybloo">
+        <p class="text0">欢迎来到我的博客</p>
+        <a href="#" class="comein">进入博客</a>
+    </div>
+    <!--轮播图-->
+    <div class="c-860 c-demoslider">
+        <div id="cuteslider_3_wrapper" class="cs-circleslight">
+            <div id="cuteslider_3" class="cute-slider" data-width="1366" data-height="768" data-overpause="false">
+                <ul data-type="slides">
+                    <li data-delay="5" data-src="5"
+                        data-trans3d="tr6,tr17,tr22,tr23,tr29,tr27,tr32,tr34,tr35,tr53,tr54,tr62,tr63,tr4,tr13,tr45"
+                        data-trans2d="tr3,tr8,tr12,tr19,tr22,tr25,tr27,tr29,tr31,tr34,tr35,tr38,tr39,tr41"><img
+                            src="images/001/001.jpg" data-thumb="images/001/001a.png"><a data-type="link" href="#"></a>
+                    </li>
+                    <li data-delay="5" data-src="5"
+                        data-trans3d="tr6,tr17,tr22,tr23,tr26,tr27,tr29,tr32,tr34,tr35,tr53,tr54,tr62,tr63,tr4,tr13"
+                        data-trans2d="tr3,tr8,tr12,tr19,tr22,tr25,tr27,tr29,tr31,tr34,tr35,tr38,tr39,tr41"><img
+                            src="images/bg/blank.png" data-src="images/001/002.jpg" data-thumb="images/001/002a.png"><a
+                            data-type="link" href="#"></a></li>
+                    <li data-delay="5" data-src="5"
+                        data-trans3d="tr6,tr17,tr22,tr23,tr26,tr27,tr29,tr32,tr34,tr35,tr53,tr54,tr62,tr63,tr4,tr13"
+                        data-trans2d="tr3,tr8,tr12,tr19,tr22,tr25,tr27,tr29,tr31,tr34,tr35,tr38,tr41"><img
+                            src="images/bg/blank.png" data-src="images/001/003.jpg" data-thumb="images/001/003a.png"><a
+                            data-type="link" href="#"></a></li>
+                    <li data-delay="5" data-src="5"
+                        data-trans3d="tr6,tr17,tr22,tr23,tr26,tr27,tr29,tr32,tr34,tr35,tr53,tr54,tr62,tr63,tr4,tr13"
+                        data-trans2d="tr3,tr8,tr12,tr19,tr22,tr25,tr27,tr29,tr31,tr34,tr35,tr38,tr39,tr41"><img
+                            src="images/bg/blank.png" data-src="images/001/004.jpg" data-thumb="images/001/004a.png"><a
+                            data-type="link" href="#"></a></li>
+                    <li data-delay="5" data-src="5"
+                        data-trans3d="tr6,tr17,tr22,tr23,tr26,tr27,tr29,tr32,tr34,tr35,tr53,tr54,tr62,tr63,tr4,tr13"
+                        data-trans2d="tr3,tr8,tr12,tr19,tr22,tr25,tr27,tr29,tr31,tr34,tr35,tr38,tr39,tr41"><img
+                            src="images/bg/blank.png" data-src="images/001/005.jpg" data-thumb="images/001/005a.png"><a
+                            data-type="link" href="#"></a></li>
+                    <li data-delay="5" data-src="5"
+                        data-trans3d="tr6,tr17,tr22,tr23,tr26,tr27,tr29,tr32,tr34,tr35,tr53,tr54,tr62,tr63,tr4,tr13"
+                        data-trans2d="tr3,tr8,tr12,tr19,tr22,tr25,tr27,tr29,tr31,tr34,tr35,tr38,tr39,tr41"><img
+                            src="images/bg/blank.png" data-src="images/001/006.jpg" data-thumb="images/001/006a.png"><a
+                            data-type="link" href="#"></a></li>
+                </ul>
+                <ul data-type="controls">
+                    <li data-type="captions"></li>
+                    <li data-type="link"></li>
+                    <li data-type="video"></li>
+                    <li data-type="slideinfo"></li>
+                    <li data-type="circletimer"></li>
+                    <li data-type="previous"></li>
+                    <li data-type="next"></li>
+                    <li data-type="bartimer"></li>
+                    <li data-type="slidecontrol" data-thumb="true" data-thumbalign="up"></li>
+                </ul>
+            </div>
+            <div class="cute-shadow"><img src="images/bg/shadow.png" alt="shadow"></div>
+        </div>
+        <p>
+            <script type="text/javascript">
+                var cuteslider3 = new Cute.Slider();
+                cuteslider3.setup("cuteslider_3", "cuteslider_3_wrapper", "images/css/slider-style.css");
+                cuteslider3.api.addEventListener(Cute.SliderEvent.CHANGE_START,
+                    function (event) {
+                    });
+                cuteslider3.api.addEventListener(Cute.SliderEvent.CHANGE_END,
+                    function (event) {
+                    });
+                cuteslider3.api.addEventListener(Cute.SliderEvent.WATING,
+                    function (event) {
+                    });
+                cuteslider3.api.addEventListener(Cute.SliderEvent.CHANGE_NEXT_SLIDE,
+                    function (event) {
+                    });
+                cuteslider3.api.addEventListener(Cute.SliderEvent.WATING_FOR_NEXT,
+                    function (event) {
+                    });
+            </script>
+    </div>
+
+</div>
+<div class="container0">
+    <div class="screenbox">
+        <div class="screen1"></div>
+        <div class="screen2"></div>
+        <div class="loading">
+            <div id="box">
+                <div class="circle2"></div>
+                <div class="circle1"></div>
+            </div>
+            <div class="nodebox">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="num"></div>
+            <div class="text">
+                <span>Loading</span>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+
+    (function () {
+        var left = 0;
+        var box = document.querySelector("#box");
+        var num = document.querySelector(".loading>.num");
+        var node = document.querySelector(".nodebox");
+        var load = document.querySelector(".loading");
+
+        var tim1 = setInterval(function () {
+            left += 1;
+            if (left > 100) {
+                left = 100;
+                load.style.cssText += 'display:none;';
+                clearInterval(tim1);
+                time1(left)
+            }
+            box.style.left = left / 100 * 500 + "px";
+            node.style.width = (1 - left / 100) * 500 + 'px';
+            num.innerHTML = left + '%';
+        }, 20);
+
+        function time1(time) {
+            if (time === 100) {
+                var screen1 = document.querySelector('.screen1');
+                var screen2 = document.querySelector('.screen2');
+                var num = 50;
+                var tim2 = setInterval(function () {
+                    num--;
+                    screen1.style.width = num + '%';
+                    screen2.style.width = num + '%';
+                    if (num < 0) {
+                        clearInterval(tim2);
+                        var comina = document.querySelector('.container1>.mybloo>.comein');
+                        comina.addEventListener('mousedown',function () {
+                            console.log('ok');
+                            comina.style.cssText+= 'box-shadow: 0px 1px 0px 1px rgba(117, 102, 22, 0.69);' +
+                                'background-color: rgba(213, 155, 12, 0.66);' +
+                                'padding: 6px;' +
+                                'color: rgb(247, 223, 42);'
+                        });
+                        comina.addEventListener('mouseup',function () {
+                            console.log('ok');
+                            comina.style.cssText+= 'box-shadow: 0px 3px 0px 1px rgba(117, 102, 22, 0.69);' +
+                                'background-color: rgba(184, 134, 11, 0.66);' +
+                                'padding: 5px;' +
+                                'color: rgb(255, 162, 63);'
+                        })
+                    }
+                }, 40)
+            }
+        }
+    }());
+
+</script>
+</html>
