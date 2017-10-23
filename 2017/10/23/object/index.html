@@ -3,19 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>This 对象的理解 | 喜 迎 四 海 客</title>
+  <title>JavaScript 访问对象属性和方法及区别 | 喜 迎 四 海 客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="Javascript,前端">
+  <meta name="description" content="1. 使用“ . ”来访问对象属性语法：    objectName.propertyName其中，objectName 为对象名称，propertyName为属性名称。 2. 使用“ [ ] ”来访问对象属性语法：   objectName[propertyName]其中，objectName 为对象名称，propertyName为属性名称。">
+<meta name="keywords" content="对象访问">
 <meta property="og:type" content="article">
-<meta property="og:title" content="This 对象的理解">
-<meta property="og:url" content="http://sihaike.github.io/2017/10/13/this/index.html">
+<meta property="og:title" content="JavaScript 访问对象属性和方法及区别">
+<meta property="og:url" content="http://sihaike.github.io/2017/10/23/object/index.html">
 <meta property="og:site_name" content="喜 迎 四 海 客">
+<meta property="og:description" content="1. 使用“ . ”来访问对象属性语法：    objectName.propertyName其中，objectName 为对象名称，propertyName为属性名称。 2. 使用“ [ ] ”来访问对象属性语法：   objectName[propertyName]其中，objectName 为对象名称，propertyName为属性名称。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507989031410&di=4b1133c3895e4f058d1f2e806a68b062&imgtype=0&src=http%3A%2F%2Fdn-musicianguide.qbox.me%2Fwp-content%2Fuploads%2F2015%2F07%2Fthe-chemical-brothers-009-908x545-500x300.jpg">
-<meta property="og:updated_time" content="2017-10-14T11:04:58.326Z">
+<meta property="og:updated_time" content="2017-10-23T13:03:28.380Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="This 对象的理解">
-<meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507989031410&di=4b1133c3895e4f058d1f2e806a68b062&imgtype=0&src=http%3A%2F%2Fdn-musicianguide.qbox.me%2Fwp-content%2Fuploads%2F2015%2F07%2Fthe-chemical-brothers-009-908x545-500x300.jpg">
+<meta name="twitter:title" content="JavaScript 访问对象属性和方法及区别">
+<meta name="twitter:description" content="1. 使用“ . ”来访问对象属性语法：    objectName.propertyName其中，objectName 为对象名称，propertyName为属性名称。 2. 使用“ [ ] ”来访问对象属性语法：   objectName[propertyName]其中，objectName 为对象名称，propertyName为属性名称。">
   
     <link rel="alternative" href="/atom.xml" title="喜 迎 四 海 客" type="application/atom+xml">
   
@@ -206,11 +207,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-this" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-object" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/10/13/this/" class="article-date">
-      <time datetime="2017-10-12T16:08:30.000Z" itemprop="datePublished">2017-10-13</time>
+      <a href="/2017/10/23/object/" class="article-date">
+      <time datetime="2017-10-23T11:02:00.530Z" itemprop="datePublished">2017-10-23</time>
 </a>
     </div>
   
@@ -223,7 +224,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      This 对象的理解
+      JavaScript 访问对象属性和方法及区别
     </h1>
   
 
@@ -234,7 +235,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript/">Javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/对象访问/">对象访问</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -244,19 +245,17 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507989031410&di=4b1133c3895e4f058d1f2e806a68b062&imgtype=0&src=http%3A%2F%2Fdn-musicianguide.qbox.me%2Fwp-content%2Fuploads%2F2015%2F07%2Fthe-chemical-brothers-009-908x545-500x300.jpg" alt="blog"></p>
+        <h3 id="1-使用“-”来访问对象属性"><a href="#1-使用“-”来访问对象属性" class="headerlink" title="1. 使用“ . ”来访问对象属性"></a>1. 使用“ . ”来访问对象属性</h3><p>语法：<br>    <code>objectName.propertyName</code><br>其中，objectName 为对象名称，propertyName为属性名称。</p>
+<h3 id="2-使用“-”来访问对象属性"><a href="#2-使用“-”来访问对象属性" class="headerlink" title="2. 使用“ [ ] ”来访问对象属性"></a>2. 使用“ [ ] ”来访问对象属性</h3><p>语法：<br>   <code>objectName[propertyName]</code><br>其中，objectName 为对象名称，propertyName为属性名称。</p>
 <a id="more"></a>
-<pre><code>this的指向:this表示当前对象，this的指向是根据调用的上下文来决定的，默认指向window对象，指向window对象时可以省略不写调用的上下文环境包括全局和局部:
-</code></pre><p><strong>一、全局环境</strong><br>        就是在<script></script>里面，这里的this始终指向的是window对象。<br><strong>二、局部环境</strong></p>
-<pre><code>1. 在全局作用域下直接调用函数，this指向window
-2. 对象函数调用，哪个对象调用就指向哪个对象
-3. 使用 new 实例化对象，在构造函数中的this指向实例化对象。
-4. 使用call或apply改变this的指向
-</code></pre><p><strong>另：</strong></p>
-<pre><code>1. 用于区分全局变量和局部变量，需要使用this
-2. 返回函数当前的对象
-3. 将当前的对象传递到下一个函数
-</code></pre>
+<p>访问对象的方法<br>在JavaScript中，只能使用“ . ”来访问对象。<br>语法：<br>    <code>objectName.methodName()</code><br>其中，objectName 为对象名称，methodName() 为函数名称。</p>
+<p>#PS：浅析对象访问属性的”.”和”[]”方法区别</p>
+<p>在JavaScript中通常使用”.”运算符来存取对象的属性的值。或者使用[]作为一个关联数组来存取对象的属性。但是这两种方式有什么区别了？<br>例如，读取object中的property属性值：<br>　　　 object.property<br>　　　 object[‘property’]<br>以上两种方式都可以实现属性的存取。</p>
+<h3 id="1-语法方面的区别"><a href="#1-语法方面的区别" class="headerlink" title="1.语法方面的区别"></a>1.语法方面的区别</h3><p>点表示法的对象的属性名是标识符，而后者的属性名则是一个字符串。</p>
+<h3 id="2-灵活性方面的区别"><a href="#2-灵活性方面的区别" class="headerlink" title="2.灵活性方面的区别"></a>2.灵活性方面的区别</h3><p>在JavaScript编写程序中，可以为对象创建任意数目的属性。但使用”.“运算符来存取一个对象的属性时，属性名是用标识符表示的。而在JavaScript程序中，标识符必须被逐字地输入，它们不是一种数据类型，因此程序不能对其操作。也就是说，标识符是静态的，在程序中必须对其进行硬编码。<br>而使用数组[]表示法来存取一个对象的属性时，属性名是用字符串表示的。字符串是JavaScript的一种数据类型，因此可以在程序运行中操作并创建它们。</p>
+<h3 id="3-性能方面区别"><a href="#3-性能方面区别" class="headerlink" title="3.性能方面区别"></a>3.性能方面区别</h3><p>数组[]表示法在存取属性值时会进行表达式运行。而点表示法是直接存取属性值，理论上执行效率会比数组表示法高。性能方面其实可以忽略。<br>某些场景必须用到数组表示法来动态存取属性值，这个是点表示法无法做到的。</p>
+<p>总的来说，这两种方法区别上不大，都有对应的使用场景。点表示法一般作为静态对象使用时来存取属性。而数组表示法在动态存取属性时就非常有用。</p>
+
       
       
         <div class="page-reward">
@@ -311,13 +310,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2017/10/13/this/">This 对象的理解</a></p>
+        <p><span>本文标题:</span><a href="/2017/10/23/object/">JavaScript 访问对象属性和方法及区别</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Wu Jiankun 的个人博客">Wu Jiankun</a></p>
-        <p><span>发布时间:</span>2017年10月13日 - 00时08分</p>
-        <p><span>最后更新:</span>2017年10月14日 - 19时04分</p>
+        <p><span>发布时间:</span>2017年10月23日 - 19时02分</p>
+        <p><span>最后更新:</span>2017年10月23日 - 21时03分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/10/13/this/" title="This 对象的理解">http://sihaike.github.io/2017/10/13/this/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://sihaike.github.io/2017/10/13/this/　　作者: Wu Jiankun" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2017/10/23/object/" title="JavaScript 访问对象属性和方法及区别">http://sihaike.github.io/2017/10/23/object/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://sihaike.github.io/2017/10/23/object/　　作者: Wu Jiankun" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -330,18 +329,18 @@
 
 <nav id="article-nav">
   
-    <a href="/2017/10/23/object/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/10/23/yufa/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          JavaScript 访问对象属性和方法及区别
+          Markdown 语法参考
         
       </div>
     </a>
   
   
-    <a href="/2017/10/13/createBlog/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hexo+Gitup免费搭建个人博客</div>
+    <a href="/2017/10/13/this/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">This 对象的理解</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -352,7 +351,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-使用“-”来访问对象属性"><span class="toc-number">1.</span> <span class="toc-text">1. 使用“ . ”来访问对象属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-使用“-”来访问对象属性"><span class="toc-number">2.</span> <span class="toc-text">2. 使用“ [ ] ”来访问对象属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-语法方面的区别"><span class="toc-number">3.</span> <span class="toc-text">1.语法方面的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-灵活性方面的区别"><span class="toc-number">4.</span> <span class="toc-text">2.灵活性方面的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-性能方面区别"><span class="toc-number">5.</span> <span class="toc-text">3.性能方面区别</span></a></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -422,13 +421,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2017/10/23/object/" title="上一篇: JavaScript 访问对象属性和方法及区别">
+            <a href="/2017/10/23/yufa/" title="上一篇: Markdown 语法参考">
                 <i class="fa fa-angle-left"></i>
             </a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2017/10/13/createBlog/" title="下一篇: Hexo+Gitup免费搭建个人博客">
+            <a href="/2017/10/13/this/" title="下一篇: This 对象的理解">
                 <i class="fa fa-angle-right"></i>
             </a>
         
